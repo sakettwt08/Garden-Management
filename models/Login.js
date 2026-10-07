@@ -21,4 +21,9 @@ const mySchema = new mong.createSchema({
     password:{
         type:String
     }
-})
+}
+)
+
+const USER = new mongoose.model("UserData",mySchema)
+
+module.exports={USER}
